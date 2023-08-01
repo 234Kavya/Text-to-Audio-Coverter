@@ -6,7 +6,9 @@ def text_to_speech(text):
     engine.runAndWait()
 
 if __name__ == '__main__':
-    print("Welcome to RoboSpeaker 1.1 created by Kavya")
-    x = input("Enter what you want me to pronounce: ")
-
-    text_to_speech(x)
+    print("Welcome to Text to Audio generator created by Kavya")
+    while True:
+         x = input("Enter what you want me to pronounce: ")
+         if x == 'q':
+             break
+         text_to_speech(x)
